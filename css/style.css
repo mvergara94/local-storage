@@ -1,0 +1,18 @@
+@import url('conteudo.css');
+@import url('header.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Classes compartilhadas */
+
+.esconde-elemento {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(farthest-corner at right top, #21a09d, #1561b7);
+  font-family: 'Roboto', cursive;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+}

@@ -1,0 +1,58 @@
+.cabecalho {
+  margin: 1rem;
+  text-align: center;
+}
+
+.cabecalho__titulo {
+  font-size: 3rem;
+  letter-spacing: 7px;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 10s infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: violet;
+  }
+  10% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: indigo;
+  }
+  20% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: blue;
+  }
+  30% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: green;
+  }
+  40% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: yellow;
+  }
+  50% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: orange;
+  }
+  60% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: red;
+  }
+  70% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: violet;
+  }
+  80% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: indigo;
+  }
+  90% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: blue;
+  }
+  100% {
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: green;
+  }
+}
