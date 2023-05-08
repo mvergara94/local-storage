@@ -32,9 +32,9 @@ function checaSeExisteNaLista(existe, itemAtual) {
 
     atualizaElemento(itemAtual);
 
-    itens[existe.id] = itemAtual;
+    itens[itens.findIndex(elemento => elemento.id === existe.id)] = itemAtual;
   } else {
-    itemAtual.id = itens.length;
+    itemAtual.id = itens[itens.length - 1] ? itens[itens.length - 1].id + 1 : 0;
 
     criaElemento(itemAtual);
 
@@ -49,6 +49,7 @@ function criaElemento(item) {
   novoItem.innerHTML = `<strong>${
     item.quantidade
   }</strong>${item.nome.toUpperCase()}`;
+  novoItem.appendChild(criaBotaoDeleta(item.id));
   listaItems.appendChild(novoItem);
 }
 
@@ -66,4 +67,25 @@ function atualizaElemento(item) {
   itemParaAtualizar.innerHTML = `<strong>${
     item.quantidade
   }</strong>${item.nome.toUpperCase()}`;
+  itemParaAtualizar.appendChild(criaBotaoDeleta(item.id));
+}
+
+function criaBotaoDeleta(id) {
+  const elementoBotao = document.createElement('button');
+  elementoBotao.innerText = 'X';
+  elementoBotao.addEventListener('click', function () {
+    deletaElemento(this.parentNode, id);
+  });
+  return elementoBotao;
+}
+
+function deletaElemento(tag, id) {
+  tag.remove();
+
+  itens.splice(
+    itens.findIndex(elemento => elemento.id === id),
+    1
+  );
+
+  guardaItens(itens);
 }

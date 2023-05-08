@@ -10,6 +10,12 @@
   animation: rainbow 10s infinite;
 }
 
+.cabecalho__texto {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
 @keyframes rainbow {
   0% {
     -webkit-text-stroke-width: 4px;

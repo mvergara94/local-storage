@@ -161,6 +161,7 @@
   align-items: center;
   gap: 1em;
   font-size: 20px;
+  position: relative;
 }
 
 .item strong {
@@ -172,6 +173,25 @@
   height: 40px;
   background: #c5965f;
   font-weight: 400;
+}
+
+.item button {
+  font-size: 2.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  position: absolute;
+  right: calc(0% + 50px);
+  transition: 0.2s ease-in-out;
+}
+
+.item button:hover,
+.item button:active {
+  border-radius: 50%;
+  background: red;
+  color: white;
 }
 
 @media (min-width: 1280px) {
