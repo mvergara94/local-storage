@@ -1,4 +1,4 @@
-# Monibank
+# APP MOCHILA
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=critical&style=for-the-badge"/>
@@ -37,7 +37,7 @@ Nesse projeto o foco principal foi a utilização do DOM para guardarmos informa
 
 ### Recursos utilizados
 
-- [Documentação JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Documentação JS](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage)
 - [Curso da Alura](https://cursos.alura.com.br/course/javascript-web-armazenando-dados-navegador)
 
 ## Autor
